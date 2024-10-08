@@ -1,0 +1,21 @@
+def find_number_in_dataset(dataset, number):
+    """
+    Function to find a number in a dataset.
+    
+    Parameters:
+    dataset (list): The dataset to search in.
+    number (int/float): The number to find.
+    
+    Returns:
+    bool: True if the number is found, False otherwise.
+    """
+    return number in dataset
+
+# Example usage
+dataset = [10, 20, 30, 40, 50]
+number_to_find = 30
+
+if find_number_in_dataset(dataset, number_to_find):
+    print(f"Number {number_to_find} found in dataset.")
+else:
+    print(f"Number {number_to_find} not found in dataset.")
